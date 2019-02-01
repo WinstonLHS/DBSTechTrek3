@@ -9,6 +9,9 @@ import 'bootstrap/dist/js/bootstrap.js';
 import '@devexpress/dx-react-chart-bootstrap4/dist/dx-react-chart-bootstrap4.css';
 import 'react-credit-cards/es/styles-compiled.css';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-vertical-timeline-component/style.min.css';
+
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

@@ -24,8 +24,8 @@ class ProfileCard extends Component{
                         <Carousel.Item>
                         <Cards
                             number={'123123'}
-                            name={'Aloy'}
-                            expiry={10/20}
+                            name={'John Phillips'}
+                            expiry={'10/22'}
                             cvc={'332'}
                             // focused={state.focused}
                             />
@@ -33,9 +33,9 @@ class ProfileCard extends Component{
                         <Carousel.Item>
                         <Cards
                             number={'3213123'}
-                            name={'SAlly'}
-                            expiry={10/20}
-                            cvc={'332'}
+                            name={'John Phillips'}
+                            expiry={'03/11'}
+                            cvc={'222'}
                             // focused={state.focused}
                             />
                         </Carousel.Item>
@@ -45,21 +45,24 @@ class ProfileCard extends Component{
                         <Table striped bordered hover size="sm">
                             <thead>
                                 <tr>
-                                <th>#</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Username</th>
+                                <th>TXN</th>
+                                <th>Receiver</th>
+                                <th>Amount</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                <td>1</td>
-                                <td>Mark</td>
+                                <td>ATM</td>
                                 <td>Otto</td>
-                                <td>@mdo</td>
+                                <td>$10.01</td>
+                                </tr>
+                                <tr>
+                                <td>CRT</td>
+                                <td>Maxi</td>
+                                <td>$0.02</td>
                                 </tr>
                             </tbody>
-                            </Table>
+                        </Table>
 
                         </Row>
                     </Container>
@@ -67,9 +70,10 @@ class ProfileCard extends Component{
                 {/* <Card.Text>
                 With supporting text below as a natural lead-in to additional content.
                 </Card.Text> */}
-                <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
-                {/* <Card.Footer className="text-muted">2 days ago</Card.Footer> */}
+                <Card.Footer className="text-muted">
+                <Button variant="faded">See More</Button>
+                </Card.Footer>
                 </Card>
             </div>
         );

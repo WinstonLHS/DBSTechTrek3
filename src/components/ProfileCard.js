@@ -9,8 +9,14 @@ import './ProfileCard.css'
 import HSBar from "react-horizontal-stacked-bar-chart";
 
 
+
 class ProfileCard extends Component{
     render(){
+
+        fetch('https://techtrek-api-gateway.cfapps.io/customers/:userName',{method: 'GET', mode:'cors',
+        headers: {'PD2':'806ba7f9-963a-4761-badd-3242f56552a3','Content-Type':'application/x-www-form-urlencoded'}})
+        .then(function(res){console.log(res)})
+
         return(
             <div>
                 <Card className="text-center shadow fixed-W ">
@@ -20,18 +26,23 @@ class ProfileCard extends Component{
                     <Container>
                         <Row>
                             <Col sm={4}>
-                            John Phillips
+                            John Phillips <br>  
+                            </br>
+                            <div style={{fontSize: '15px'}}>
+                            Last Login: 2 hours ago
+                            </div>
                             </Col>
                             <Col sm={4}>
                             <HSBar data={[{ value: 10 }, { value: 20 }, {value: 30}]} />
                             </Col>
                             <Col sm={4}>
-                            <Button variant="primary">
-                            Profile <Badge variant="light">9</Badge>
+                            <Button variant="danger">
+                            Messages <Badge variant="light">2</Badge>
                             <span className="sr-only">unread messages</span>
                             </Button>
-                            <Button variant="primary">
-                            Profile <Badge variant="light">9</Badge>
+                            <br></br>
+                            <Button variant="danger">
+                            Alerts <Badge variant="light">9</Badge>
                             <span className="sr-only">unread messages</span>
                             </Button>
                             </Col>
@@ -42,8 +53,11 @@ class ProfileCard extends Component{
                 {/* <Card.Text>
                 With supporting text below as a natural lead-in to additional content.
                 </Card.Text> */}
-                <Button variant="primary">Go somewhere</Button>
+                {/* <Button variant="primary">Go somewhere</Button> */}
                 </Card.Body>
+                <Card.Footer className="text-muted">
+                <Button variant="faded">See More</Button>
+                </Card.Footer>
                 {/* <Card.Footer className="text-muted">2 days ago</Card.Footer> */}
                 </Card>
             </div>
