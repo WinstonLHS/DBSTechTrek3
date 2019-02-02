@@ -4,7 +4,7 @@ import './login.css'
 
 import axios from 'axios'
 
-class login extends Component {
+class Plogin extends Component {
   constructor () {
     super()
     this.state = {
@@ -47,4 +47,4 @@ class login extends Component {
     )
   }
 }
-export default login
+export default Plogin
