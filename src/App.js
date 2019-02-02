@@ -36,13 +36,7 @@ class App extends Component {
             <br></br>
             <Timeline></Timeline>
           <p>
-<<<<<<< Updated upstream
             {/* Edit <code>src/App.js</code> and save to reload. ! */}
-=======
-          
-            <Plogin/>
-            Edit <code>src/App.js</code> and save to reload. !
->>>>>>> Stashed changes
           </p>
           {/* <a
             className="App-link"
