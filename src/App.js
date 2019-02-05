@@ -2,14 +2,11 @@ import React, { Component } from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
 import logo from './logo.svg';
 import './App.css';
-<<<<<<< Updated upstream
 import ProfileCard from './components/ProfileCard'
 import CreditCard from './components/CreditCard/CreditCard'
 import Timeline from './components/TimeLineCard/ProfileCard'
-=======
 import Plogin from './login/login';
 
->>>>>>> Stashed changes
 class App extends Component {
   render() {
     return (
@@ -39,13 +36,7 @@ class App extends Component {
             <br></br>
             <Timeline></Timeline>
           <p>
-<<<<<<< Updated upstream
             {/* Edit <code>src/App.js</code> and save to reload. ! */}
-=======
-          
-            <Plogin/>
-            Edit <code>src/App.js</code> and save to reload. !
->>>>>>> Stashed changes
           </p>
           {/* <a
             className="App-link"
