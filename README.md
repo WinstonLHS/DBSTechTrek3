@@ -1,3 +1,7 @@
+This project is archived and no longer maintained. There is no more interest in this project. It has served its purpose.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
